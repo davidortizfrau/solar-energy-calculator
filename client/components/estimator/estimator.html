@@ -1,0 +1,62 @@
+<template name="estimator">
+  <div id="estimator" class="box">
+
+    <div id="kw-input">
+      <span class="icon icon-lightbulb"></span>
+      <p class="data-label">Indique Su Consumo Promedio Diario</p>
+
+      <p class="data-display">
+        <span id="control-minus" class="icon-left-dir control" data-toggle="tooltip" data-placement="left" title="Tooltip on left"></span>
+        {{ kW }} kWh
+        <span id="control-plus" class="icon-right-dir control"></span>
+      </p>
+
+    </div>
+
+    <div id="data-display" class="row">
+      <div class="col-sm-4">
+        <span class="icon icon-battery"></span>
+        <label class="data-label">Capacidad del Sistema <sup>1</sup></label>
+        <p class="data-display">{{ capacity }} kW dc</p>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="/images/ruler.svg">
+        <label class="data-label">Área para Intalación <sup>2</sup></label>
+        <p class="data-display">{{ installationArea }} p2</p>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="/images/calculator.svg">
+        <label class="data-label">Instalación con Permisos <sup>3</sup></label>
+        <p class="data-display">${{ estimate }}</p>
+      </div>
+<!--
+      <div id="email-request">
+        <p>Para ver resultados blah blah blah...</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control input-sm" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control input-sm" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div> -->
+
+    </div>
+
+    <div class="box-disclaimers">
+      <h2 class="box-heading">Disclaimers</h2>
+      <ul>
+        <li>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula luctus condimentum. In a sem velit. Morbi bibendum finibus semper.</li>
+        <li>2. Suspendisse vel nulla vestibulum, auctor quam vitae, semper leo. Curabitur vitae turpis pellentesque, congue est eget, ultrices leo.</li>
+        <li>3. Curabitur vitae turpis pellentesque, congue est eget, ultrices leo.</li>
+      </ul>
+    </div>
+
+  </div>
+</template>

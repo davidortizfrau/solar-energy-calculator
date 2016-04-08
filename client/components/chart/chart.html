@@ -1,0 +1,13 @@
+<template name="chart">
+  <div class="box chart box-green-bg">
+    <div class="content">
+      <h1 class="data-label">Precio del kW</h1>
+      <p class="data-display">${{ latestPrice }}</p>
+    </div>
+
+    <div id="kWPriceHistory" class="canvas">
+      <canvas id="canvas" height="60px"></canvas>
+    </div>
+
+  </div>
+</template>

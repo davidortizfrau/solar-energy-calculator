@@ -1,0 +1,15 @@
+<template name="sponsor">
+  <div class="box sponsor">
+    <h1 class="box-heading">Financiamiento</h1>
+    <img src="http://placehold.it/250x100">
+
+    <label class="data-label">Pago Mensual</label>
+    <p class="data-display">${{ financing.payment }}</p>
+
+    <label class="data-label">Término</label>
+    <p class="data-display">{{ financing.termYears }} años</p>
+
+    <label class="data-label">Interés Anual</label>
+    <p class="data-display">{{ financing.rate }}%</p>
+  </div>
+</template>

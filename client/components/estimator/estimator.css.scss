@@ -1,0 +1,55 @@
+#estimator {
+  text-align: center;
+
+  .icon {
+    font-size: 3em;
+    height: 42px;
+  }
+
+  img {
+    height: 42px;
+    padding-bottom: 8px;
+  }
+
+  .control {
+    cursor: pointer;
+    animation-name: flash;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+  }
+
+  #kw-input {
+    height: 120px;
+    padding: 1em 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffba4c+0,ffa500+100 */
+    background: #ffba4c; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ffba4c 0%, #ffa500 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffba4c 0%,#ffa500 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #ffba4c 0%,#ffa500 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffba4c', endColorstr='#ffa500',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    border-bottom: 1px solid #CC8100;
+  }
+
+  #data-display {
+    position: relative;
+    padding: 20px 0 5px;
+
+    #email-request {
+      padding: 1em 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.95);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: white;
+    }
+  }
+}
+
+@keyframes flash {
+  0%   {opacity: 0.25;}
+  50%  {opacity: 1;}
+  100% {opacity: 0.25;}
+}
